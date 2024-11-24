@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mô Phỏng Thí Nghiệm Hóa Học</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mô Phỏng Thí Nghiệm Hóa Học</h1>
+        <p>Dành Cho Học Sinh THCS</p>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu Bộ Sách Lựa Chọn</h2>
+            <div class="buttons">
+                <button onclick="selectBook('chân trời sáng tạo')">Chân Trời Sáng Tạo</button>
+                <button onclick="selectBook('cánh diều')">Cánh Diều</button>
+                <button onclick="selectBook('kết nối tri thức')">Kết Nối Tri Thức</button>
+            </div>
+        </section>
+
+        <section id="content" style="display: none;">
+            <h2 id="selected-book"></h2>
+            <div class="buttons">
+                <button onclick="selectGrade('8')">Lớp 8</button>
+                <button onclick="selectGrade('9')">Lớp 9 (Đang cập nhật)</button>
+            </div>
+        </section>
+
+        <section id="subject" style="display: none;">
+            <h2>Chủ Đề Lớp 8</h2>
+            <div class="buttons">
+                <button onclick="selectSubject('1')">Chủ Đề 1: Phản Ứng Hóa Học</button>
+                <button onclick="selectSubject('2')">Chủ Đề 2: Hóa Học Vô Cơ</button>
+            </div>
+        </section>
+
+        <section id="back-section">
+            <a href="#" id="back-button" onclick="goBack()">Quay Lại</a>
+        </section>
+    </main>
+</body>
+</html>
